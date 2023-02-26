@@ -1,10 +1,10 @@
 # Función recursiva para imprimir los números de 1 hasta n
 
-def ImprimirNumerosDe1Hastan(n):
+def imprimir_numerosde1HastaN(n):
     if n == 1:
-        return 1
+        return print(n)
     else:
-        return print(ImprimirNumerosDe1Hastan(n - 1))
+        return imprimir_numerosde1HastaN(n-1), print(n)
 
 
-print(ImprimirNumerosDe1Hastan(3))
+imprimir_numerosde1HastaN(3)
